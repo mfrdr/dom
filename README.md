@@ -1,6 +1,6 @@
 # dom
 ### Analysis of reliability and interchangeability of in situ against lab measurements to study Oresund dynamics
-By Francisca, Lara and Lucas
+<sup> By Francisca, Lara and Lucas - June 2024 </sup><br><br>
 
 
  
