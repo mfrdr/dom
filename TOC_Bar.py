@@ -28,12 +28,12 @@ for i in range(len(stations)):
         stations_to_plot.append(stations[i])
         Filteredbottom_to_plot.append(Filteredbottom[i])
         Filteredsurface_to_plot.append(Filteredsurface[i])
+
 # Plotting
 fig, ax = plt.subplots(figsize=(10, 6))  # Adjust figure size if needed
 bar_width = 0.35
 opacity = 0.8
 
-# Plot bars
 bar1 = ax.bar([i - bar_width/2 for i in range(1, len(stations_to_plot)+1)], Surface_to_plot, bar_width,
               alpha=opacity, color='tab:blue', label='Surface')
 bar2 = ax.bar([i + bar_width/2 for i in range(1, len(stations_to_plot)+1)], Bottom_to_plot, bar_width,
@@ -42,7 +42,7 @@ bar3=ax.bar([i - bar_width/2 for i in range(1, len(stations_to_plot)+1)], Filter
               alpha=opacity, color='tab:purple',label="Bottom filtered")
 bar4=ax.bar([i + bar_width/2 for i in range(1, len(stations_to_plot)+1)], Filteredsurface_to_plot, bar_width,
               alpha=opacity, color='tab:green',label="Surface filtered")
-# Set x-axis ticks and labels
+
 ax.set_xlabel('Stations',fontsize=18)
 ax.set_ylabel('TOC [µM]',fontsize=18)
 ax.set_title('Surface and Bottom TOC Across Stations',fontsize=22)
@@ -79,6 +79,7 @@ for i in range(len(stations)):
         stations_to_plot.append(stations[i])
         Filteredbottom_to_plot.append(Filteredbottom[i])
         Filteredsurface_to_plot.append(Filteredsurface[i])
+
 # Plotting
 fig, ax = plt.subplots(figsize=(10, 6))  # Adjust figure size if needed
 bar_width = 0.35
@@ -93,7 +94,7 @@ bar3=ax.bar([i - bar_width/2 for i in range(1, len(stations_to_plot)+1)], Filter
               alpha=opacity, color='tab:purple',label="Bottom filtered")
 bar4=ax.bar([i + bar_width/2 for i in range(1, len(stations_to_plot)+1)], Filteredsurface_to_plot, bar_width,
               alpha=opacity, color='tab:green',label="Surface filtered")
-# Set x-axis ticks and labels
+
 ax.set_xlabel('Stations')
 ax.set_ylabel('TN [µM]')
 ax.set_title('Surface and Bottom TN Across Stations')
