@@ -1,7 +1,9 @@
 # dom
 ### Analysis of reliability and interchangeability of in situ against lab measurements to study Oresund dynamics
+By Francisca, Lara and Lucas
 
 
+ 
 
 This repository contains the original and modified datasets, together with the code to produce those changes and conduct further analysis.
 
